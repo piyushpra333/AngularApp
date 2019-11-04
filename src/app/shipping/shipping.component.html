@@ -1,0 +1,8 @@
+<h3>Shipping Costs</h3>
+<div class="shipping-item" *ngFor="let cost of ShippingCost |async">
+    <p>{{cost.type}}</p>
+    <p>{{cost.price | currency}}</p>
+    
+</div>
+<button type="button" class="btn btn-success">OnlinePayment</button>
+<button type="button" class="btn btn-success">Cash On Delivery</button>
